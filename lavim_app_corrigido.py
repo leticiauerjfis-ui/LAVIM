@@ -4,6 +4,11 @@ import html
 import datetime
 
 import streamlit as st
+import subprocess
+import sys
+subprocess.check_call([sys.executable,
+"-m", "pip", "install",
+"opencv-python-headless"])
 import cv2
 import numpy as np
 import pandas as pd
